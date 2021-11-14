@@ -16,12 +16,19 @@ class AuthView extends GetView<AuthController> {
         //pageColorLight: Colors.white,
         //pageColorDark: Colors.white
       ),
-      hideSignUpButton: true,
+      hideSignUpButton: false,
       hideForgotPasswordButton: true,
 
       //logo: AssetImage('assets/images/ecorp-lightblue.png'),
-      onLogin: (_){},
-      onSignup: (_){},
+      onLogin: (temp){
+        print(temp.name);
+        print(temp.password);
+        return controller.signIn(temp);
+        //return Future.value("asdasda");
+      },
+      onSignup: (temp){
+        return controller.signUp(temp);
+      },
       onSubmitAnimationCompleted: () {
         Get.offAllNamed('/dashboard');
         //Navigator.of(context).pushReplacement(MaterialPageRoute(

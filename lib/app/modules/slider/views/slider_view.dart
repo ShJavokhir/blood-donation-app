@@ -40,7 +40,10 @@ class SliderView extends GetView<SliderController> {
               Expanded(child: Container()),
               Padding(
                 padding: EdgeInsets.all(20)
-              ,child: CustomButton(text: "Get Started", backgroundColor: AppColors.red_color_1, onPressed: (){})),
+              ,child: CustomButton(text: "Get Started", backgroundColor: AppColors.red_color_1, onPressed: (){
+
+                Get.offAllNamed('/auth');
+              })),
               SizedBox(height: 4.h,)
             ],
           )

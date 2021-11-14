@@ -15,6 +15,11 @@ dependencies:
   get_storage: ^2.0.3
   flutter_beautiful_popup: ^1.7.0
   sizer: ^2.0.15
+  firebase_auth: ^3.2.0
+  firebase_core: ^1.10.0
+  flutter_svg: ^0.22.0
+  cloud_firestore: ^3.1.0
+
 
 dev_dependencies: 
   lints: 1.0.1
